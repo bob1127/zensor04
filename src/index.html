@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webpack Bootstrap</title>
+    <link rel="stylesheet" href="../dist/styles.css" />
+    <script src="../dist/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+ 
+   
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div id="category">
+        <div class="title">禪譜產品分類</div>
+        <div class="content">
+          <ul>
+            <li class="sidebar_zensor">
+              電化學相關（5)<span></span>
+              <ul class="sidebar_pro_ouside_wrap">
+                <li class="sidebar_pro_ouside">
+                  化學感測器實擬分析儀 - Zensor Simulator(4)
+                  <ul class="sidebar_pro_inside_wrap">
+                    <li class="sidebar_pro_inside">ECAS100</li>
+                    <li class="sidebar_pro_inside">ACIP100</li>
+                    <li class="sidebar_pro_inside">Optical + EC</li>
+                  </ul>
+                </li>
+                <li class="sidebar_pro_ouside">
+                  電化學偵測器 - Zensor ECD(1)
+                  <ul class="sidebar_pro_inside_wrap">
+                    <li class="sidebar_pro_inside">SF100</li>
+                  </ul>
+                </li>
+                <li class="sidebar_pro_ouside">
+                  網版印刷電極 - Zensor SPE(7)
+                  <ul class="sidebar_pro_inside_wrap">
+                    <li class="sidebar_pro_inside">電極客製服務</li>
+                    <li class="sidebar_pro_inside">TE100 碳三電極</li>
+                    <li class="sidebar_pro_inside">SE100 碳單電極</li>
+                    <li class="sidebar_pro_inside">AG100 銀電極</li>
+                    <li class="sidebar_pro_inside">AUSE100 金電極</li>
+                    <li class="sidebar_pro_inside">SAUTE100 金電極</li>
+                    <li class="sidebar_pro_inside">AUTE200 金電極</li>
+                  </ul>
+                </li>
+                <li class="sidebar_pro_ouside">
+                  無線&多通道恆電位儀 / 電化學分析儀 - Zensor MCP(2)
+                  <ul class="sidebar_pro_inside_wrap">
+                    <li class="sidebar_pro_inside">ECWP100</li>
+                    <li class="sidebar_pro_inside">MCP100</li>
+                  </ul>
+                </li>
+                <li class="sidebar_pro_ouside">
+                  其他產品(3)
+                  <ul class="sidebar_pro_inside_wrap">
+                    <li class="sidebar_pro_inside">CS100</li>
+                    <li class="sidebar_pro_inside">CM100</li>
+                    <li class="sidebar_pro_inside">CT100</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li>相關公司（8）</li>
+          </ul>
+        </div>
+      </div>
+      <nav>
+        <div class="top_nav">
+          <div class="left_wrap">
+            <div class="logo">禪譜科技有限公司<br />ZENSOR</div>
+          </div>
+
+          <div class="right_wrap">
+            <ul class="icon_wrap">
+              <li class="icon">ICON</li>
+              <li class="icon">ICON</li>
+              <li class="icon">ICON</li>
+              <li class="icon">ICON</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom_nav">
+          <ul>
+            <li> <a href="#">Ｈome</a> </li>
+            <li> <a href="#">About us</a> </li>
+            <li id='nav_product'><a href='#'>Product</a>
+              <div class="product_toggle">
+                <div class="wrap">
+                  <div class="item" >
+                    <img src="../images/nav商品圖片/ECWP100C.png" alt="">
+                    <p>Simulator</p>
+                  </div>
+                  <div class="item" >
+                    <img src="../images/nav商品圖片/ECWP100C.png" alt="">
+                    <p>Simulator</p>
+                  </div>
+                  <div class="item" >
+                    <img src="../images/nav商品圖片/ECWP100C.png" alt="">
+                    <p>Simulator</p>
+                  </div>
+                  <div class="item" >
+                    <img src="../images/nav商品圖片/ECWP100C.png" alt="">
+                    <p>Simulator</p>
+                  </div>
+                  <div class="item" >
+                    <img src="../images/nav商品圖片/ECWP100C.png" alt="">
+                    <p>Simulator</p>
+                  </div>
+                  <div class="item" >
+                    <img src="../images/nav商品圖片/ECWP100C.png" alt="">
+                    <p>Simulator</p>
+                  </div>
+                  <div class="item" >
+                    <img src="../images/nav商品圖片/ECWP100C.png" alt="">
+                    <p>Simulator</p>
+                  </div>
+
+
+
+
+
+
+                  
+
+                </div>
+              </div>
+            </li>
+            <li> <a href="#">Techenology</a> </li>
+            <li> <a href="#">News</a> </li>
+            <li> <a href="#">Contact us</a> </li>
+            
+          </ul>
+        </div>
+        
+      </nav>
+      <header>
+        <div class="oakslider">
+          <div class="oakslider__ui">
+            <div class="oakslider__nav">
+              <div class="oakslider__navpoint">
+                <div class="oakslider__timer">
+                  <div class="timer__progress"></div>
+                </div>
+                <span class="oakslider__label"></span>
+              </div>
+              <div class="oakslider__navpoint">
+                <div class="oakslider__timer">
+                  <div class="timer__progress"></div>
+                </div>
+                <span class="oakslider__label"></span>
+              </div>
+              <div class="oakslider__navpoint">
+                <div class="oakslider__timer">
+                  <div class="timer__progress"></div>
+                </div>
+                <span class="oakslider__label"></span>
+              </div>
+            </div>
+
+
+            <div class="oakslider__controls">
+              <div
+                style="display: none"
+                class="oakslider__arrow oakslider__arrow--left oakslider__prev"
+              ></div>
+              <div
+                style="display: none"
+                class="oakslider__arrow oakslider__arrow--right oakslider__next"
+              >
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="oakslider__slider">
+            <div class="oakslider__slide slide--active" data-slide="1">
+              <div class="slide__image">
+                <div class="img" style='background-image: url(../images/1920x768/banner-03.jpg);'></div>
+              </div>
+              <div class="slide__container">
+                <div class="slide__content">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="oakslider__slide" data-slide="2">
+              <div class="slide__image">
+                <div class="img" style='background-image: url(../images/1920x768/banner-02.jpg);'></div>
+              </div>
+              <div class="slide__container">
+                <div class="slide__content">
+                  <div class="slide__title">
+                    .開機 / 連線後可直接使用 
+                    
+                  </div>
+                  <div class="slide__link">
+                    .1~8個連接器可直接使用
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="oakslider__slide" data-slide="3">
+              <div class="slide__image">
+                <div class="img" style='background-image: url(../images/1920x768/banner-1.jpg);'></div>
+              </div>
+              <div class="slide__container">
+                <div class="slide__content">
+                  <div class="slide__title">
+                    .無線傳輸 .多通道設計 .
+                    
+                  </div>
+                  <div class="slide__link">
+                    .1~8個連接器可直接使用
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <section class="section_chemistry">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="wrap">
+                <div class="txt">
+                  <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay='200'>化學感測器</h2>
+                  <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay='200'>ＺＥＮＳＯＲ SIMULATOR</h3>
+                  <p class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay='400'>
+                    電化學分析儀適用於實驗室的生化、環境、毒物、食品
+                    、藥物等檢測之化學感應器的研發；具自由編寫程序與
+                    校正曲線，並執行臨床獨立離線使用功能。
+                  </p>
+                  <a href="" class="link-txt link-blue">了解更多</a>
+                </div>
+                <div class="chemistry_img">img</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="wrap">
+                <div class="txt">
+                  <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay='200'>電化學偵測器</h2>
+                  <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay='200'>ＺＥＮＳＯＲ SIMULATOR</h3>
+                  <p class="mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay='400'>
+                    電化學分析儀適用於實驗室的生化、環境、毒物、食品
+                    、藥物等檢測之化學感應器的研發；具自由編寫程序與
+                    校正曲線，並執行臨床獨立離線使用功能。
+                  </p>
+                  <a href="" class="link-txt link-blue">了解更多</a>
+                </div>
+                <div class="chemistry_img">img</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_print">
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-md-12">
+              <div class="print_txt">
+                <h2 data-aos="fade-up" data-aos-duration='800'>網版印刷電極</h2>
+                <h3 data-aos="fade-up" data-aos-duration='800'>ZENSOR SPE</h3>
+                <p class="second_title" data-aos='fade-up' dat-aos-duration='800' data-aos-delay='300'>
+                  網版印刷電極利用網版印刷技術發展出具有可拋棄、價格低廉、大量
+                  製作、方便可攜帶和多重設計變化等等的卓越優點的新一代電極。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="slick-wrap">
+                <div class="pre">PRE</div>
+                <div class="slick-item">PIC</div>
+                <div class="slick-item">PIC</div>
+                <div class="slick-item">PIC</div>
+                <div class="next">NEXT</div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5 mb-5">
+            <div class="col-md-12">
+              <a class="link link-txt">了解更多</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="container">
+                <div class="reveal">
+                  <img
+                    src="https://images.pexels.com/photos/4149040/pexels-photo-4149040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_mcp mt-5 mb-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="mcp_txt">
+                <h2 data-aos='fade-in' data-aos-duration='2000'>無限多通道電位儀</h2>
+                <h3 data-aos='fade-in' data-aos-duration='2000'> ZENSOR MCP</h3>
+                <p class="second_title" data-aos='fade-in' data-aos-duration='2000' data-aos-delay="300"> 
+                  我們提供有線與無線的多通道電化學分析儀，皆可設定不同
+                  的電化學方d法，與同步執行或個別獨立執行各通道，讓研究 者
+                  節省下大量的時間，並同時產出更多的實驗數據。
+                </p>
+              </div>
+              <div class="container">
+                <div class="reveal">
+                  <img
+                    src="https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_others mt-5 mb-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="txt">
+                <h2>想要了解更多相關品嗎?</h2>
+                <a href="link-txt link-blue">比較產品規格</a>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <div class="othersProduct_wrap">
+                <div class="item">PRODUCT</div>
+                <div class="item">PRODUCT</div>
+                <div class="item">PRODUCT</div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <div class="bottom_txt">
+                <p>我們還有提供免費服務喔!</p>
+                <a href="" class="link-txt link-blue"> 您可以參考 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_news">
+        <div class="container-fluid">
+          <div class="row no-gutters">
+            <div class="col-md-6 top-md-6">
+              <div class="news_txt">
+                <h2>最新消息</h2>
+                <h3>NEWS</h3>
+                <p class="second_title">
+                  電化學分析儀適用於實驗室的生化、環境
+                  、毒物、食品、藥物等檢測之化學感應器
+                  的研發；具自由編寫程序與校正曲線，並
+                  執行臨床獨立離線使用功能。
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row inside_row no-gutters">
+                <div class="col-md-6 right_txt">真的可以冻龄並百毒不侵嗎？</div>
+                <div class="col-md-6">
+                  <div class="news_img">IMAGE</div>
+                </div>
+              </div>
+              <div class="row inside_row no-gutters">
+                <div class="col-md-6">
+                  <div class="news_img">IMAGE</div>
+                </div>
+                <div class="col-md-6 right_txt">
+                  根據美國骨骼健康協會的建議， 成年人一天需要1000-1200毫
+                  克的鈣質
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>聯絡我們</h2>
+              <h3>contact</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="wrap">
+                <p class="footer-logo">禪譜科技股份有限公司<br />ZENSOR</p>
+                <ul class="mt-4">
+                  <li>
+                    <div class="icon"></div>
+                    <p>聯絡電話</p>
+                  </li>
+                  <li>
+                    <div class="icon"></div>
+                    <p>聯絡電話</p>
+                  </li>
+                  <li>
+                    <div class="icon"></div>
+                    <p>聯絡電話</p>
+                  </li>
+                  <li>
+                    <div class="icon"></div>
+                    <p>聯絡電話</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="wrap">
+                <p class="footer-logo">其他合作</p>
+                <div class="company_item class='mt-4'">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="wrap">
+                <p class="footer-logo">公司位置</p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.1546404833553!2d120.67912315035352!3d24.09605668434361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693c4f4ea55b59%3A0x929567b71b95f89c!2z56aq6K2c56eR5oqA6IKh5Lu95pyJ6ZmQ5YWs5Y-4IFplbnNvciBSJkQ!5e0!3m2!1szh-TW!2stw!4v1615885170521!5m2!1szh-TW!2stw"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+
+    
+    </script>
+  </body>
+</html>

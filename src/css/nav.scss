@@ -1,0 +1,117 @@
+* {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  .top_nav {
+    background-color: #3784a8;
+    @extend %display_center;
+    .left_wrap {
+      padding-left: 3rem;
+      width: 50%;
+
+      .logo {
+        height: 100%;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+      }
+    }
+    .right_wrap {
+      width: 50%;
+
+      .icon_wrap {
+        display: flex;
+        margin-top: 0.65rem;
+        justify-content: flex-end;
+        align-items: center;
+
+        .icon {
+          width: 30px;
+          height: 30px;
+          font-size: 0.2rem;
+          background-color: #fff;
+          margin: 0 0.2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .bottom_nav {
+    background-color: rgba(0, 0, 0, 0.2);
+    ul {
+      justify-content: flex-end;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0.7rem 0;
+      padding-right: 3rem;
+
+      li {
+        color: white;
+        margin: 0 0.8rem;
+      }
+    }
+  }
+  .product_toggle {
+    background-color: #fff;
+    position: absolute;
+    top: 20vh;
+    right: 5%;
+    z-index: 9999;
+    width: 40%;
+    filter: blur(6px);
+    transition: 0.5s;
+    visibility: hidden;
+    padding: 1rem 0;
+    @extend %display_center;
+    .wrap {
+      @extend %display_center;
+      flex-wrap: wrap;
+
+      width: 90%;
+
+      .item {
+        z-index: 99999;
+        @extend %display_center;
+        flex-direction: column;
+        border: 1px solid rgb(233, 233, 233);
+        width: 25%;
+        margin: 0.2rem;
+        transform: scale(1);
+
+        &:hover {
+          transform: scale(1.2);
+        }
+        img {
+          width: 100%;
+        }
+        p {
+          color: #333 !important;
+        }
+      }
+    }
+  }
+  #nav_product {
+    &:hover .product_toggle {
+      top: 15vh;
+      visibility: visible;
+      filter: blur(0);
+    }
+  }
+}
+.navHidden {
+  display: none;
+}
